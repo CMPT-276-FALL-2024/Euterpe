@@ -31,17 +31,6 @@
 
     <script src="login.js"></script>
     <script>
-      const aName = "twice2"
-        axios({
-            method: 'GET',
-            url: `https://tastedive.com/api/similar?q=music:${aName}&type=music&k=1041239-SpotifyR-E4730F90&info=1`,
-            headers: {
-              'Content-Type': 'application/x-www-form-urlencoded',
-            },
-        }).then((res) => {
-            const data = res.data
-            console.log(data)
-        })
       
       const loginWithSpotify = () => {
         window.location.href = loginUrl;
